@@ -3,7 +3,7 @@
 <!-- END TITLE -->
 
 <!-- BEGIN TOC -->
-> 7/9/2020, 1:33:50 PM
+> 7/9/2020, 4:13:37 PM
 
 - [0-hello-world](#0-hello-world)
 - [1-remove-from-array](#1-remove-from-array)
@@ -49,7 +49,7 @@ Started
 
 
 2 specs, 0 failures
-Finished in 0.017 seconds
+Finished in 0.018 seconds
 
 ```
 
@@ -62,36 +62,30 @@ Finished in 0.017 seconds
 
 <a name="removeFromArray"></a>
 
-## removeFromArray()
+## removeFromArray(arr, ...value) ⇒ <code>object</code>
+This function takes an array and some other arguments 
+then removes the other arguments from that array
 
+
+**Returns**: <code>object</code> - arr  after deletion  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| arr | <code>object</code> | the array from which the other arguments will be removed |
+| ...value | <code>object</code> | other arguments to be removed from the array |
+
+**Example**  
+```js
+const arr = removeFromArray([1, 2, 3, 4], 3);
+console.log(arr); // [1,2,4]
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F..F.
+.....................
 
-Failures:
-1) removeFromArray removes a single value
-.    Expected undefined to equal [ 1, 2, 4 ]..
 
-2) removeFromArray removes multiple values
-.    Expected undefined to equal [ 1, 4 ]..
-
-3) removeFromArray ignores non present values
-.    Expected undefined to equal [ 1, 2, 3, 4 ]..
-
-4) removeFromArray ignores non present values, but still works
-.    Expected undefined to equal [ 1, 3, 4 ]..
-
-5) removeFromArray can remove all values
-.    Expected undefined to equal [  ]..
-
-6) removeFromArray works with strings
-.    Expected undefined to equal [ 2, 'ho' ]..
-
-7) removeFromArray only removes same type
-.    Expected undefined to equal [ 1, 2 ]..
-
-7 specs, 7 failures
+7 specs, 0 failures
 Finished in 0.01 seconds
 
 ```
@@ -135,7 +129,7 @@ Failures:
 .    Expected undefined to equal ''..
 
 7 specs, 7 failures
-Finished in 0.009 seconds
+Finished in 0.012 seconds
 
 ```
 
@@ -209,7 +203,7 @@ Failures:
 .    Expected undefined to equal 'ERROR'..
 
 6 specs, 6 failures
-Finished in 0.013 seconds
+Finished in 0.008 seconds
 
 ```
 
@@ -258,7 +252,7 @@ Failures:
 .    Expected undefined to equal 21..
 
 9 specs, 9 failures
-Finished in 0.014 seconds
+Finished in 0.01 seconds
 
 ```
 
@@ -323,7 +317,7 @@ Failures:
 .    Expected undefined to equal false..
 
 6 specs, 6 failures
-Finished in 0.012 seconds
+Finished in 0.008 seconds
 
 ```
 
@@ -403,7 +397,7 @@ Failures:
 .    Expected undefined to equal 'Ebiil, Tloia!'..
 
 7 specs, 7 failures
-Finished in 0.013 seconds
+Finished in 0.012 seconds
 
 ```
 
@@ -434,7 +428,7 @@ Failures:
 .    TypeError: Cannot read property 'name' of undefined.
 
 3 specs, 3 failures
-Finished in 0.01 seconds
+Finished in 0.004 seconds
 
 ```
 
@@ -483,7 +477,7 @@ Failures:
 .    Expected undefined to equal 'ethay ickquay ownbray oxfay'..
 
 9 specs, 9 failures
-Finished in 0.013 seconds
+Finished in 0.011 seconds
 
 ```
 
@@ -523,7 +517,7 @@ Failures:
 .    Expected undefined to equal 'snake_case_is_awesome'..
 
 6 specs, 6 failures
-Finished in 0.008 seconds
+Finished in 0.007 seconds
 
 ```
 
