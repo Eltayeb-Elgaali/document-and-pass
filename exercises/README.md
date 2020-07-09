@@ -3,7 +3,7 @@
 <!-- END TITLE -->
 
 <!-- BEGIN TOC -->
-> 7/9/2020, 7:53:22 PM
+> 7/10/2020, 12:26:54 AM
 
 - [0-hello-world](#0-hello-world)
 - [1-remove-from-array](#1-remove-from-array)
@@ -49,7 +49,7 @@ Started
 
 
 2 specs, 0 failures
-Finished in 0.019 seconds
+Finished in 0.017 seconds
 
 ```
 
@@ -157,7 +157,7 @@ Started
 
 
 4 specs, 0 failures
-Finished in 0.005 seconds
+Finished in 0.006 seconds
 
 ```
 
@@ -193,7 +193,7 @@ Started
 
 
 6 specs, 0 failures
-Finished in 0.009 seconds
+Finished in 0.008 seconds
 
 ```
 
@@ -206,43 +206,30 @@ Finished in 0.009 seconds
 
 <a name="fibonacci"></a>
 
-## fibonacci()
+## fibonacci(max) ⇒ <code>number</code>
+This function returns a specific member of the fibonacci sequence
+Fibonacci is a a series of numbers in which each number ( Fibonacci number ) 
+is the sum of the two preceding numbers.
 
+
+**Returns**: <code>number</code> - nextNumber - the returned member (Fibonacci number)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| max | <code>number</code> | the order of the member to be returned |
+
+**Example**  
+```js
+fibonacci(4) // returns the 4th member of the series: 3  (1, 1, 2, 3)
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F..F..F..F.
+...........................
 
-Failures:
-1) fibonacci works
-.    Expected undefined to equal 3..
 
-2) fibonacci works
-.    Expected undefined to equal 8..
-
-3) fibonacci works
-.    Expected undefined to equal 55..
-
-4) fibonacci works
-.    Expected undefined to equal 610..
-
-5) fibonacci works
-.    Expected undefined to equal 75025..
-
-6) fibonacci doesn't accept negatives
-.    Expected undefined to equal 'OOPS'..
-
-7) fibonacci DOES accept strings
-.    Expected undefined to equal 1..
-
-8) fibonacci DOES accept strings
-.    Expected undefined to equal 1..
-
-9) fibonacci DOES accept strings
-.    Expected undefined to equal 21..
-
-9 specs, 9 failures
-Finished in 0.016 seconds
+9 specs, 0 failures
+Finished in 0.013 seconds
 
 ```
 
@@ -267,7 +254,7 @@ Failures:
 .    Expected undefined to equal [ 'Book', 'Book2' ]..
 
 1 spec, 1 failure
-Finished in 0.003 seconds
+Finished in 0.005 seconds
 
 ```
 
@@ -307,7 +294,7 @@ Failures:
 .    Expected undefined to equal false..
 
 6 specs, 6 failures
-Finished in 0.009 seconds
+Finished in 0.01 seconds
 
 ```
 
@@ -344,7 +331,7 @@ Failures:
 .    Expected undefined to equal false..
 
 5 specs, 5 failures
-Finished in 0.01 seconds
+Finished in 0.007 seconds
 
 ```
 
@@ -387,7 +374,7 @@ Failures:
 .    Expected undefined to equal 'Ebiil, Tloia!'..
 
 7 specs, 7 failures
-Finished in 0.01 seconds
+Finished in 0.009 seconds
 
 ```
 
@@ -418,7 +405,7 @@ Failures:
 .    TypeError: Cannot read property 'name' of undefined.
 
 3 specs, 3 failures
-Finished in 0.006 seconds
+Finished in 0.007 seconds
 
 ```
 
@@ -467,7 +454,7 @@ Failures:
 .    Expected undefined to equal 'ethay ickquay ownbray oxfay'..
 
 9 specs, 9 failures
-Finished in 0.011 seconds
+Finished in 0.013 seconds
 
 ```
 
@@ -507,7 +494,7 @@ Failures:
 .    Expected undefined to equal 'snake_case_is_awesome'..
 
 6 specs, 6 failures
-Finished in 0.01 seconds
+Finished in 0.011 seconds
 
 ```
 
