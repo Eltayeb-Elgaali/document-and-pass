@@ -3,7 +3,7 @@
 <!-- END TITLE -->
 
 <!-- BEGIN TOC -->
-> 7/9/2020, 4:52:35 PM
+> 7/9/2020, 5:22:42 PM
 
 - [0-hello-world](#0-hello-world)
 - [1-remove-from-array](#1-remove-from-array)
@@ -49,7 +49,7 @@ Started
 
 
 2 specs, 0 failures
-Finished in 0.016 seconds
+Finished in 0.018 seconds
 
 ```
 
@@ -86,7 +86,7 @@ Started
 
 
 7 specs, 0 failures
-Finished in 0.008 seconds
+Finished in 0.011 seconds
 
 ```
 
@@ -122,7 +122,7 @@ Started
 
 
 7 specs, 0 failures
-Finished in 0.009 seconds
+Finished in 0.01 seconds
 
 ```
 
@@ -135,28 +135,29 @@ Finished in 0.009 seconds
 
 <a name="reverseString"></a>
 
-## reverseString()
+## reverseString(str) ⇒ <code>string</code>
+This function simply reverse a given string
 
+
+**Returns**: <code>string</code> - reversedStr  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| str | <code>string</code> | string to be reversed |
+
+**Example**  
+```js
+const result = reverseString('hello there');
+console.log(result); // 'ereht olleh'
+```
 **Test Report**
 ```
 Started
-.F..F..F..F.
+............
 
-Failures:
-1) reverseString reverses single word
-.    Expected undefined to equal 'olleh'..
 
-2) reverseString reverses multiple words
-.    Expected undefined to equal 'ereht olleh'..
-
-3) reverseString works with numbers and punctuation
-.    Expected undefined to equal '!cba !321'..
-
-4) reverseString works with blank strings
-.    Expected undefined to equal ''..
-
-4 specs, 4 failures
-Finished in 0.007 seconds
+4 specs, 0 failures
+Finished in 0.006 seconds
 
 ```
 
@@ -245,7 +246,7 @@ Failures:
 .    Expected undefined to equal 21..
 
 9 specs, 9 failures
-Finished in 0.012 seconds
+Finished in 0.013 seconds
 
 ```
 
@@ -310,7 +311,7 @@ Failures:
 .    Expected undefined to equal false..
 
 6 specs, 6 failures
-Finished in 0.01 seconds
+Finished in 0.008 seconds
 
 ```
 
@@ -390,7 +391,7 @@ Failures:
 .    Expected undefined to equal 'Ebiil, Tloia!'..
 
 7 specs, 7 failures
-Finished in 0.011 seconds
+Finished in 0.009 seconds
 
 ```
 
@@ -421,7 +422,7 @@ Failures:
 .    TypeError: Cannot read property 'name' of undefined.
 
 3 specs, 3 failures
-Finished in 0.007 seconds
+Finished in 0.006 seconds
 
 ```
 
@@ -470,7 +471,7 @@ Failures:
 .    Expected undefined to equal 'ethay ickquay ownbray oxfay'..
 
 9 specs, 9 failures
-Finished in 0.013 seconds
+Finished in 0.011 seconds
 
 ```
 
@@ -510,7 +511,7 @@ Failures:
 .    Expected undefined to equal 'snake_case_is_awesome'..
 
 6 specs, 6 failures
-Finished in 0.01 seconds
+Finished in 0.014 seconds
 
 ```
 
