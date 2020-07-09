@@ -3,7 +3,7 @@
 <!-- END TITLE -->
 
 <!-- BEGIN TOC -->
-> 7/9/2020, 5:22:42 PM
+> 7/9/2020, 7:53:22 PM
 
 - [0-hello-world](#0-hello-world)
 - [1-remove-from-array](#1-remove-from-array)
@@ -49,7 +49,7 @@ Started
 
 
 2 specs, 0 failures
-Finished in 0.018 seconds
+Finished in 0.019 seconds
 
 ```
 
@@ -86,7 +86,7 @@ Started
 
 
 7 specs, 0 failures
-Finished in 0.011 seconds
+Finished in 0.009 seconds
 
 ```
 
@@ -157,7 +157,7 @@ Started
 
 
 4 specs, 0 failures
-Finished in 0.006 seconds
+Finished in 0.005 seconds
 
 ```
 
@@ -170,34 +170,30 @@ Finished in 0.006 seconds
 
 <a name="sumAll"></a>
 
-## sumAll()
+## sumAll(firstNumber, lastNumber) ⇒ <code>number</code>
+This function takes 2 numbers and returns the sum of every number between(and including) them:
 
+
+**Returns**: <code>number</code> - result - the returned summation  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| firstNumber | <code>number</code> | first number in the range |
+| lastNumber | <code>number</code> | last number in the range |
+
+**Example**  
+```js
+const result = sumAll(1, 4) 
+console.log(result); // 10
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F.
+..................
 
-Failures:
-1) sumAll sums numbers within the range
-.    Expected undefined to equal 10..
 
-2) sumAll works with large numbers
-.    Expected undefined to equal 8002000..
-
-3) sumAll works with larger number first
-.    Expected undefined to equal 7626..
-
-4) sumAll returns ERROR with negative numbers
-.    Expected undefined to equal 'ERROR'..
-
-5) sumAll returns ERROR with non-number parameters
-.    Expected undefined to equal 'ERROR'..
-
-6) sumAll returns ERROR with non-number parameters
-.    Expected undefined to equal 'ERROR'..
-
-6 specs, 6 failures
-Finished in 0.01 seconds
+6 specs, 0 failures
+Finished in 0.009 seconds
 
 ```
 
@@ -246,7 +242,7 @@ Failures:
 .    Expected undefined to equal 21..
 
 9 specs, 9 failures
-Finished in 0.013 seconds
+Finished in 0.016 seconds
 
 ```
 
@@ -311,7 +307,7 @@ Failures:
 .    Expected undefined to equal false..
 
 6 specs, 6 failures
-Finished in 0.008 seconds
+Finished in 0.009 seconds
 
 ```
 
@@ -348,7 +344,7 @@ Failures:
 .    Expected undefined to equal false..
 
 5 specs, 5 failures
-Finished in 0.008 seconds
+Finished in 0.01 seconds
 
 ```
 
@@ -391,7 +387,7 @@ Failures:
 .    Expected undefined to equal 'Ebiil, Tloia!'..
 
 7 specs, 7 failures
-Finished in 0.009 seconds
+Finished in 0.01 seconds
 
 ```
 
@@ -511,7 +507,7 @@ Failures:
 .    Expected undefined to equal 'snake_case_is_awesome'..
 
 6 specs, 6 failures
-Finished in 0.014 seconds
+Finished in 0.01 seconds
 
 ```
 
