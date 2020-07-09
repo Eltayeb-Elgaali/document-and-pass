@@ -3,7 +3,7 @@
 <!-- END TITLE -->
 
 <!-- BEGIN TOC -->
-> 7/9/2020, 4:13:37 PM
+> 7/9/2020, 4:52:35 PM
 
 - [0-hello-world](#0-hello-world)
 - [1-remove-from-array](#1-remove-from-array)
@@ -49,7 +49,7 @@ Started
 
 
 2 specs, 0 failures
-Finished in 0.018 seconds
+Finished in 0.016 seconds
 
 ```
 
@@ -86,7 +86,7 @@ Started
 
 
 7 specs, 0 failures
-Finished in 0.01 seconds
+Finished in 0.008 seconds
 
 ```
 
@@ -99,37 +99,30 @@ Finished in 0.01 seconds
 
 <a name="repeatString"></a>
 
-## repeatString()
+## repeatString(str, num) ⇒ <code>string</code>
+This function simply repeats the string a given number of times
 
+
+**Returns**: <code>string</code> - repeatedStr  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| str | <code>string</code> | the array from which the other arguments will be removed |
+| num | <code>number</code> | other arguments to be removed from the array |
+
+**Example**  
+```js
+const str = repeatString('hey', 3)
+console.log(str); // 'heyheyhey'
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F..F.
+.....................
 
-Failures:
-1) repeatString repeats the string
-.    Expected undefined to equal 'heyheyhey'..
 
-2) repeatString repeats the string many times
-.    Expected undefined to equal 'heyheyheyheyheyheyheyheyheyhey'..
-
-3) repeatString repeats the string 1 times
-.    Expected undefined to equal 'hey'..
-
-4) repeatString repeats the string 0 times
-.    Expected undefined to equal ''..
-
-5) repeatString returns ERROR with negative numbers
-.    Expected undefined to equal 'ERROR'..
-
-6) repeatString repeats the string a random amount of times
-.    TypeError: Cannot read property 'match' of undefined.
-
-7) repeatString works with blank strings
-.    Expected undefined to equal ''..
-
-7 specs, 7 failures
-Finished in 0.012 seconds
+7 specs, 0 failures
+Finished in 0.009 seconds
 
 ```
 
@@ -203,7 +196,7 @@ Failures:
 .    Expected undefined to equal 'ERROR'..
 
 6 specs, 6 failures
-Finished in 0.008 seconds
+Finished in 0.01 seconds
 
 ```
 
@@ -252,7 +245,7 @@ Failures:
 .    Expected undefined to equal 21..
 
 9 specs, 9 failures
-Finished in 0.01 seconds
+Finished in 0.012 seconds
 
 ```
 
@@ -317,7 +310,7 @@ Failures:
 .    Expected undefined to equal false..
 
 6 specs, 6 failures
-Finished in 0.008 seconds
+Finished in 0.01 seconds
 
 ```
 
@@ -397,7 +390,7 @@ Failures:
 .    Expected undefined to equal 'Ebiil, Tloia!'..
 
 7 specs, 7 failures
-Finished in 0.012 seconds
+Finished in 0.011 seconds
 
 ```
 
@@ -428,7 +421,7 @@ Failures:
 .    TypeError: Cannot read property 'name' of undefined.
 
 3 specs, 3 failures
-Finished in 0.004 seconds
+Finished in 0.007 seconds
 
 ```
 
@@ -477,7 +470,7 @@ Failures:
 .    Expected undefined to equal 'ethay ickquay ownbray oxfay'..
 
 9 specs, 9 failures
-Finished in 0.011 seconds
+Finished in 0.013 seconds
 
 ```
 
@@ -517,7 +510,7 @@ Failures:
 .    Expected undefined to equal 'snake_case_is_awesome'..
 
 6 specs, 6 failures
-Finished in 0.007 seconds
+Finished in 0.01 seconds
 
 ```
 
