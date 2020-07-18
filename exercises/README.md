@@ -3,7 +3,7 @@
 <!-- END TITLE -->
 
 <!-- BEGIN TOC -->
-> 7/16/2020, 4:04:27 PM
+> 7/16/2020, 6:58:57 PM
 
 - [0-hello-world](#0-hello-world)
 - [1-remove-from-array](#1-remove-from-array)
@@ -49,7 +49,7 @@ Started
 
 
 2 specs, 0 failures
-Finished in 0.011 seconds
+Finished in 0.013 seconds
 
 ```
 
@@ -86,7 +86,7 @@ Started
 
 
 7 specs, 0 failures
-Finished in 0.011 seconds
+Finished in 0.012 seconds
 
 ```
 
@@ -122,7 +122,7 @@ Started
 
 
 7 specs, 0 failures
-Finished in 0.008 seconds
+Finished in 0.009 seconds
 
 ```
 
@@ -157,7 +157,7 @@ Started
 
 
 4 specs, 0 failures
-Finished in 0.005 seconds
+Finished in 0.004 seconds
 
 ```
 
@@ -229,7 +229,7 @@ Started
 
 
 9 specs, 0 failures
-Finished in 0.012 seconds
+Finished in 0.011 seconds
 
 ```
 
@@ -264,7 +264,7 @@ Started
 
 
 1 spec, 0 failures
-Finished in 0.002 seconds
+Finished in 0.001 seconds
 
 ```
 
@@ -277,34 +277,31 @@ Finished in 0.002 seconds
 
 <a name="leapYears"></a>
 
-## leapYears()
+## leapYears(year) ⇒ <code>boolean</code>
+This function determines whether or not a given year is a leap year. Leap years are determined by the following rules:
+Leap years are years divisible by four (like 1984 and 2004). However, years divisible by 100 are not leap years (such as 1800 and 1900) 
+unless they are divisible by 400 (like 1600 and 2000, which were in fact leap years).
 
+
+**Returns**: <code>boolean</code> - true if leap year and false if not.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| year | <code>number</code> | the year to be checked |
+
+**Example**  
+```js
+const year2003 = leapYears(2003);
+console.log(year2003); // false
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F.
+..................
 
-Failures:
-1) leapYears works with non century years
-.    Expected undefined to equal true..
 
-2) leapYears works with non century years
-.    Expected undefined to equal false..
-
-3) leapYears works with ridiculously futuristic non century years
-.    Expected undefined to equal true..
-
-4) leapYears works with century years
-.    Expected undefined to equal false..
-
-5) leapYears works with century years
-.    Expected undefined to equal true..
-
-6) leapYears works with century years
-.    Expected undefined to equal false..
-
-6 specs, 6 failures
-Finished in 0.009 seconds
+6 specs, 0 failures
+Finished in 0.007 seconds
 
 ```
 
@@ -317,31 +314,30 @@ Finished in 0.009 seconds
 
 <a name="palindromes"></a>
 
-## palindromes()
+## palindromes(str) ⇒ <code>boolean</code>
+This function determines whether a string is a palindrome.
+A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward.
 
+
+**Returns**: <code>boolean</code> - true if palindromes and false if not.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| str | <code>string</code> | the string to be checked |
+
+**Example**  
+```js
+const isStrPalindrome = palindromes('hah');
+console.log(isStrPalindrome); // true
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F.
+...............
 
-Failures:
-1) palindromes works with single words
-.    Expected undefined to equal true..
 
-2) palindromes works with punctuation
-.    Expected undefined to equal true..
-
-3) palindromes works with multiple words
-.    Expected undefined to equal true..
-
-4) palindromes works with multiple words
-.    Expected undefined to equal true..
-
-5) palindromes doesn't just always return true
-.    Expected undefined to equal false..
-
-5 specs, 5 failures
-Finished in 0.009 seconds
+5 specs, 0 failures
+Finished in 0.007 seconds
 
 ```
 
@@ -354,37 +350,29 @@ Finished in 0.009 seconds
 
 <a name="caesar"></a>
 
-## caesar()
+## caesar(str, chr) ⇒ <code>string</code>
+This function substitute each letter in the plaintext by a letter in a fixed number of positions down the alphabet.
 
+
+**Returns**: <code>string</code> - new encrypted string.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| str | <code>string</code> | the string to be encrypted |
+| chr | <code>number</code> | how many letters to shift |
+
+**Example**  
+```js
+caesar('A', 1) // simply shifts the letter by 1: returns 'B'
+```
 **Test Report**
 ```
 Started
-.F..F..F..F..F..F..F.
+.....................
 
-Failures:
-1) caesar works with single letters
-.    Expected undefined to equal 'B'..
 
-2) caesar works with words
-.    Expected undefined to equal 'Bbb'..
-
-3) caesar works with phrases
-.    Expected undefined to equal 'Mjqqt, Btwqi!'..
-
-4) caesar works with negative shift
-.    Expected undefined to equal 'Hello, World!'..
-
-5) caesar wraps
-.    Expected undefined to equal 'A'..
-
-6) caesar works with large shift factors
-.    Expected undefined to equal 'Ebiil, Tloia!'..
-
-7) caesar works with large negative shift factors
-.    Expected undefined to equal 'Ebiil, Tloia!'..
-
-7 specs, 7 failures
-Finished in 0.011 seconds
+7 specs, 0 failures
+Finished in 0.008 seconds
 
 ```
 
@@ -415,7 +403,7 @@ Failures:
 .    TypeError: Cannot read property 'name' of undefined.
 
 3 specs, 3 failures
-Finished in 0.005 seconds
+Finished in 0.007 seconds
 
 ```
 
@@ -464,7 +452,7 @@ Failures:
 .    Expected undefined to equal 'ethay ickquay ownbray oxfay'..
 
 9 specs, 9 failures
-Finished in 0.014 seconds
+Finished in 0.016 seconds
 
 ```
 
@@ -504,7 +492,7 @@ Failures:
 .    Expected undefined to equal 'snake_case_is_awesome'..
 
 6 specs, 6 failures
-Finished in 0.009 seconds
+Finished in 0.008 seconds
 
 ```
 
